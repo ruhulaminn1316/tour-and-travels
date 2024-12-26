@@ -1,0 +1,273 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.logo-container .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #f39c12;
+}
+
+/* Package Details Section */
+.package-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+}
+
+.package-details .heading {
+    font-size: 32px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.package-details .content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.package-details img {
+    max-width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 30px;
+}
+
+.package-details .text {
+    max-width: 600px;
+}
+
+.package-details .text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.package-details .text h3 {
+    font-size: 22px;
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+.package-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.package-details .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.package-details .btn:hover {
+    background-color: #f39c12;
+}
+
+/* Packages Section */
+.packages {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.packages .heading {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.package-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.package-card {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.package-card h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.package-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.package-card ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.package-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.package-card .btn:hover {
+    background-color: #f39c12;
+}
+
+/* Day-wise Itinerary Section */
+.itinerary {
+    background-color: #ecf0f1;
+    padding: 50px 20px;
+}
+
+.itinerary .heading {
+    font-size: 28px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.itinerary-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.itinerary-day {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.itinerary-day h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.itinerary-day p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.box h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.box a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.box a:hover {
+    color: #f39c12;
+}
+
+.credit {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .package-details .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .package-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package-card {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .itinerary-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .itinerary-day {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
